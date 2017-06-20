@@ -1,0 +1,122 @@
+.device_hero {
+	background: #2765a0;
+	background: -webkit-radial-gradient(50% bottom, #58c6ed, #235b91, #235b91);
+	font-family: "turkcell_saturaregular";
+
+	.container {
+		background: url('../images/infosprite.png') no-repeat;
+		background-position: 580px 40px;
+	}
+
+	h1 {
+		padding-top: 100px;
+		padding-bottom: 20px;
+		font-size: 60px;
+		color: #f2f2f2;
+	}
+
+	button {
+		width: 310px;
+		height: 44px;
+		margin-bottom: 110px;
+		padding-left: 16px;
+		text-align: left;
+		font-family: "turkcell_saturaregular";
+		font-size: 20px;
+		color: $lightgrey;
+		background: #f2f2f2 url('../images/caret.png') no-repeat;
+		background-position: 280px 20px;
+		border: 0;
+		box-shadow: 1px 1px 1px 1px #2c6894;
+		cursor: pointer;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: #fff url('../images/caret.png') no-repeat;
+			background-position: 280px 20px;
+		}
+	}
+}
+
+.device_dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.device_drop_content {
+	display: none;
+	position: absolute;
+	top: 29%;
+	right: 0;
+	width: 310px;
+	background: $white;
+    min-width: 160px;
+    box-shadow: 1px 1px 1px 3px rgba(219, 219, 219, 0.1);
+    z-index: 2;
+
+    h2 {
+    	padding: 30px 0 20px 30px;
+    	font-family: "turkcell_saturabold";
+    	font-size: 20px;
+    	color: $darkgrey;
+    	border-bottom: 1px solid #f2f2f2;
+    }
+
+    a {
+    	display: block;
+    	padding: 20px 25px 20px 30px;
+    	font-family: "helveturklineregular";
+		color: $darkgrey;
+    	text-decoration: none;
+
+    	&:hover {
+    		font-weight: bold;
+    		background: #e3e2e2;
+    	}
+
+    	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 35px;
+		height: 65px;
+		}
+
+		.paid {
+			display: block;
+			font-size: 10px;
+			color: $lightgrey;
+		}
+
+    	.phone_number {
+    		display: inline-block;
+    		font-weight: bold;
+    	}
+    }
+}
+
+.show {
+	display: block;
+}
+
+.line1 {
+
+	&:before {
+		background: url('../images/drop1.png') no-repeat;
+	}
+}
+
+.line2 {
+	&:before {
+		background: url('../images/drop2.png') no-repeat;
+	}
+}
+
+
+.line3 {
+	&:before {
+		margin-right: 10px;
+		background: url('../images/drop3.png') no-repeat;
+	}
+}

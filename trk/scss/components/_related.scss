@@ -1,0 +1,58 @@
+.related {
+	margin-top: 50px;
+	font-family: "turkcell_saturabold";
+	color: #fff;
+	background: #f38135;
+	background: linear-gradient(0deg, #f38134, #f8ba4c 80%) no-repeat;
+
+	.container {
+		background: url('../images/articlesprite.png') no-repeat;
+		background-position: 0 -60px;
+
+	.tab_title {
+		margin-top: 76px;
+		margin-bottom: 38px;
+		margin-left: 38px;
+	}
+	}
+}
+
+.related_row {
+	margin-left: 330px;
+	padding-bottom: 145px;
+
+	&:before, 
+    &:after {
+        content:"";
+        display: table ;
+        clear: both;
+    }
+}
+
+.related_column {
+	float: left;
+	padding-left: 57px;
+	border-left: 1px solid #f59237;
+
+	&:nth-child(2) {
+	padding-right: 60px;
+	}
+}
+
+.related_topics {
+
+	li {
+		padding-bottom: 20px;
+		list-style-type: disc;
+	}
+
+	a {
+		font-size: 20px;
+		text-decoration: none;
+		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,167 @@
+.modes {
+	padding-top: 50px;
+	color: $darkblue;
+
+	@include breakpoint(tablet) {
+		text-align: center;
+
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	@include breakpoint(desktop) {
+		text-align: center;
+
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	
+
+	.section_title {
+		padding: 0 20px 25px 20px;
+		font-family: "volvosanspro_light";
+		font-size: 24px;
+
+		@include breakpoint(tablet) {
+			font-size: 32px;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: 32px;
+		}
+	}
+
+	h3 {
+		padding: 0 20px 25px 20px;
+		font-family: "volvosanspro_regular";
+		font-size: 16px;
+		line-height: 27px;
+
+		@include breakpoint(tablet) {
+			padding: 0 130px;
+		}
+
+		@include breakpoint(desktop) {
+			padding: 0 360px;
+		}
+	}
+}
+
+.mode_list {
+	@include breakpoint(tablet) {
+		width: 50%;
+		float: left;
+		padding-top: 60px;
+	}
+
+	@include breakpoint(desktop) {
+		width: 30%;
+		float: left;
+		padding-top: 60px;
+	}
+}
+
+.choose_mode {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		padding: 0 20px 30px 20px;
+	}
+
+	a {
+		padding-bottom: 20px;
+		font-family: "volvosanspro_regular";
+		font-size: 18px;
+		color: #a3acb6;
+		text-decoration: none;
+
+		&:hover {
+			color: #002f55;
+			border-bottom: 3px solid #22d895;
+		}
+	}
+}
+
+.mode_picture {
+	@include breakpoint(tablet) {
+		float: right;
+		height: 385px;
+		width: 385px;
+		padding-top: 50px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	@include breakpoint(desktop) {
+		width: 60%;
+		float: right;
+		padding-top: 50px;
+		position: relative;
+	}
+
+	img {
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 40px;
+
+		@include breakpoint(tablet) {
+			margin-top: 50px;
+			width: auto;
+			height: 385px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.mode_description {
+	padding: 0 30px;
+	font-family: "volvosanspro_regular";
+	font-size: 14px;
+
+	@include breakpoint(tablet) {
+		padding: 0 40px 0 80px;
+	}
+
+	@include breakpoint(desktop) {
+		padding-left: 75px;
+	}
+}
+
+.visible_xs {
+	@include breakpoint(tablet) {
+		display: none;
+	}
+	@include breakpoint(desktop) {
+		display: none;
+	}
+}
+
+.hidden_xs {
+	@include breakpoint(phone) {
+		display: none;
+	}
+}
+
+.link_image {
+	@include breakpoint(phone) {
+		display: none;
+	}
+}
+
+.dev_process_hidden_phone {
+	@include breakpoint(phone) {
+		display: none;
+	}
+}

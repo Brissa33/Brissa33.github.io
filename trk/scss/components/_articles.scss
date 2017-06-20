@@ -1,0 +1,257 @@
+.articles {
+	margin-top: 30px;
+
+	.container {
+		width: 100%;
+		max-width: 1024px;
+	}
+}
+
+.article_row {
+
+	&:before, 
+    &:after {
+        content:"";
+        display: table ;
+        clear: both;
+    }
+}
+
+.article_column {
+	float: left;
+}
+
+.article_sidebar {
+	width: 330px;
+	padding-bottom: 475px;
+	box-shadow: inset -5px 0 5px -5px #efefef;
+}
+
+.article_text {
+	margin-right: 20px;
+	margin-left: 46px;
+	width: 610px;
+}
+
+.tab_title {
+	font-family: "turkcell_saturabold";
+  	font-size: 34px;
+}
+
+.article_title {
+	padding-top: 22px;
+	color: $darkgrey;
+}
+
+.list_title {
+	padding-top: 10px;
+	padding-bottom: 36px;
+	color: $darkgrey;
+	background: -webkit-radial-gradient(50% bottom, #f9f9f9, #fbfbfb, #fefefe, #fff);
+
+	&:before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -10px;
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: 0 -1px;
+	}
+}
+
+.article_list {
+
+	li {
+		padding: 38px 0;
+		border-bottom: 1px solid #eaeaea;
+		background: linear-gradient(300deg, #eaeaea, #f7f7f7, #f9f9f9, #fbfbfb, #fefefe, #fff);
+		
+		&:first-child {
+			border-top: 1px solid #eaeaea;
+		}
+
+		&:hover,
+		&.selected {
+			background: #fff;
+			cursor: pointer;
+		}
+	}
+
+	a {
+		display: block;
+		max-width: 310px;
+		font-family: "turkcell_saturabold";
+		font-size: 24px;
+		text-decoration: none;
+		color: $darkgrey;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	& .selected a {
+	color: $orange;
+	}
+}
+
+.article_title {
+	margin-top: 37px;
+	padding-bottom: 26px;
+	text-transform: uppercase;
+}
+
+.tab_description {
+	padding-right: 20px;
+	padding-bottom: 26px;
+	line-height: 20px;
+	font-family: "helveturklinebold";
+	font-size: 14px;
+	color: $lightgrey;
+}
+
+.article {
+	position: relative;
+	margin-top: 38px;
+
+	&:last-child {
+		margin-top: 64px;
+	}
+
+	p {
+		margin-bottom: 32px;
+		line-height: 20px;
+		font-family: "helveturklineregular";
+		font-size: 14px;
+		color: $lightgrey;
+	}
+
+	h2 {
+		margin-bottom: 28px;
+		font-family: "turkcell_saturabold";
+		font-size: 24px;
+		color: $darkgrey;
+	}
+
+	video {
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+	.playbutton {
+		position: absolute;
+		left: 20%;
+		top: 40%;
+		transform: translateX(-20%);
+		
+	}
+
+.article_text_container {
+	padding-bottom: 60px;
+	background: linear-gradient(360deg, #eaeaea, #f7f7f7, #f9f9f9, #fbfbfb, #fefefe, #fff 10%);
+}
+
+.survey {
+	&:before, 
+    &:after {
+        content:"";
+        display: table ;
+        clear: both;
+    }
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-family: "helveturklineregular";
+		font-size: 14px;
+		color: $lightgrey;
+	}
+	span {
+		font-family: "helveturklinebold";
+		color: $orange;
+	}
+}
+
+.survey_question {
+	float: left;
+	padding-top: 60px;
+	margin-bottom: 16px;
+	font-family: "turkcell_saturabold";
+	font-size: 24px;
+	color: $darkgrey;
+}
+
+.survey_answer {
+	float: left;
+	padding-top: 80px;
+	padding-left: 138px;
+
+}
+
+.answer_button {
+	padding: 15px 34px;
+	font-family: "turkcell_saturaregular";
+	font-size: 20px;
+	text-decoration: none;
+	box-shadow: 1px 1px 1px #9f9f9f;
+}
+
+.yes {
+	margin-right: 10px;
+	color: #000;
+	background: $yellow;
+
+	&:hover {
+		background: #ffcc00;
+	}
+}
+
+.no {
+	color: #fff;
+	background: $darkgrey;
+
+	&:hover {
+		background: #2e2e2e;
+	}
+}
+
+.social_links {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+.articles_socialmedia {
+	clear: left;
+}
+
+.art_facebook {
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: -5px -620px;
+}
+
+.art_twitter {
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: -69px -620px;
+}
+
+.art_google {
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: -135px -620px;
+}
+
+.art_email {
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: -202px -620px;
+}
+
+.art_print {
+	background: url('../images/articlesprite.png') no-repeat;
+	background-position: -271px -620px;
+}

@@ -1,0 +1,87 @@
+.crumb_search {
+    padding: 30px;
+    background: $white;
+    background: linear-gradient(0deg, #f3f3f3, #fbfbfb, #fefefe, #fff 35%) no-repeat;
+
+    .container {
+        position: relative;
+    }
+
+    a {
+        padding: 4px 5px;
+        text-decoration: none;
+        color: $lightgrey;
+        font-family: "helveturklinebold";
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+            color: $orange;
+        }
+
+        &:active {
+            color: $orange;
+        }
+
+        &:focus {
+            color: $orange;
+        }
+
+        &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 9px;
+        height: 11px;
+        margin: 0 9px;
+        background: url('../images/arrow.png') no-repeat;
+        }
+    }
+
+    span {
+        display: inline-block;
+        margin-right: 10px;
+        text-indent: -9999px;
+    }
+}
+
+.home_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    background: url('../images/home.png') no-repeat;
+}
+
+.search_billing {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.search_billing_field {
+    width: 231px;
+    height: 29px;
+    border-top: 1px solid #d4d4d4;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-bottom: 1px solid #f8f8f8;
+    padding-left: 9px;
+    font-family: "helveturklinebold";
+    font-size: 12px;
+    box-shadow: inset 1px 2px 1px -1px #d4d4d4, inset 1px 0px 1px -1px #d4d4d4, inset -1px 0px 1px -1px #d4d4d4;
+}
+
+.search_billing_button {
+    position: absolute;
+    background: url('../images/searchbill.png') no-repeat;
+    border: 0;
+    top: 10px;
+    right: 8px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,138 @@
+.projects {
+  @include breakpoint(smallphone) {
+     margin-top: -50px;
+   }
+
+  @include breakpoint(phone) {
+    margin-top: -50px;
+  }
+}
+
+.shortDescription {
+  font-family: 'gothamprolight', sans-serif;
+  font-size: 22px;
+  color: $darkblue;
+
+  @include breakpoint(smallphone) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include breakpoint(phone) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.portfolioRow {
+  margin-top: -90px;
+  padding-bottom: 100px;
+
+  @include breakpoint(smallphone) {
+    margin-top: -10px;
+    padding-bottom: 30px;
+  }
+
+  @include breakpoint(phone) {
+    margin-top: -10px;
+    padding-bottom: 30px;
+  }
+
+  @include breakpoint(tablet) {
+    margin-top: 30px;
+  }
+
+  @include breakpoint(land) {
+    margin-top: 30px;
+  }
+}
+
+.project {
+  @include breakpoint(land) {
+    margin-top: -100px;
+  }
+}
+
+.portfolioSubcontainer {
+  position: relative;
+  margin-top: 135px;
+  max-width: 330px;
+  max-height: 330px;
+  background: #000;
+  &:hover {
+    transition: all 0.3s ease-in;
+    .projectDescription {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint(smallphone) {
+    width: 260px;
+    height: 260px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint(phone) {
+    width: 280px;
+    height: 280px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint(tablet) {
+    margin-top: 60px;
+  }
+}
+
+.projectName {
+  float: right;
+  padding-top: 10px;
+  font-family: 'gothamproregular', sans-serif;
+  font-size: 12px;
+  color: #a2a2a2;
+}
+
+.projectDescription {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, .7);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+
+  .projectTitle {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'gothamprobold', sans-serif;
+    font-size: 18px;
+    color: #ffff00;
+  }
+
+  .projectSubtitle {
+    font-family: 'leitura_displayitalic', Serif;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .projectTitle, .projectSubtitle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  .personal {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'gothamproregular', sans-serif;
+    font-size: 12px;
+    color: #fff;
+  }
+}

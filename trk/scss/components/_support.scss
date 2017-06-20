@@ -1,0 +1,228 @@
+.support {
+	
+	background: linear-gradient(0deg, #f3f3f3, #fbfbfb, #fefefe, #fff 2%) no-repeat;
+
+	.container {
+		width: 100%;
+		max-width: 1024px;
+		overflow: hidden;
+	}
+
+.support_row {
+
+	&:before, 
+    &:after {
+        content:"";
+        display: table ;
+        clear: both;
+    }
+}
+
+.support_column {
+	float: left;
+}
+
+.help_topics {
+	background: linear-gradient(270deg, #f7f7f7, #fcfcfc, #fefefe, #fff 10%) no-repeat;
+}
+	
+	sidebar {
+		width: 341px;
+		padding-bottom: 310px;
+		color: $darkgrey;
+		border-right: 1px solid #e5e5e5;
+
+		h1 {
+			padding-top: 80px;
+			padding-bottom: 30px;
+			padding-left: 20px;
+			font-family: "turkcell_saturabold";
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+
+		li {
+			
+			border-bottom: 1px solid #e5e5e5;
+
+			&:first-child {
+				border-top: 1px solid #e5e5e5;
+			}
+
+			&:hover {
+				background: #fff;
+			}
+		}
+
+		a {
+			display: block;
+			padding: 30px 0;
+			font-family: "turkcell_saturabold";
+			font-size: 18px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $darkgrey;
+
+			&:hover {
+				color: $orange;
+			}
+
+			&:before {
+				content: "";
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 12px;
+				padding-left: 12px;
+			}
+		}
+	}
+
+.your_device {
+	&:before {
+		background: url('../images/supportsprite.png') no-repeat;
+		background-position: 15px 0;
+	}
+}
+
+.your_account {
+	&:before {
+		background: url('../images/supportsprite.png') no-repeat;
+		background-position: -35px 0;
+	}
+}
+
+.more_support {
+	&:before {
+		background: url('../images/supportsprite.png') no-repeat;
+		background-position: -95px 0;
+	}
+}
+
+.all_support {
+	&:before {
+		background: url('../images/supportsprite.png') no-repeat;
+		background-position: -150px 0;
+	}
+}
+
+.choose_device {
+	padding-left: 20px;
+	width: 682px;
+	text-align: center;
+
+	h3 {
+		padding-top: 84px;
+		padding-bottom: 5px;
+		font-family: "turkcell_saturabold";
+		font-size: 24px;
+		color: $darkgrey;
+	}
+
+	p {
+		font-family: "helveturklineregular";
+		font-size: 14px;
+		color: $lightgrey;
+		line-height: 20px;
+	}
+
+	.dropbtn {
+		position: relative;
+		width: 320px;
+		height: 45px;
+		margin-top: 40px;
+		margin-right: 8px;
+		background: #f6f6f6;
+		font-family: "turkcell_saturaregular";
+		font-size: 20px;
+		text-align: left;
+		color: $lightgrey;
+		cursor: pointer;
+		border: none;
+		box-shadow: 1px 1px 1px 1px $lightgrey;
+
+		&:after {
+			content: "All";
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 200px;
+			width: 55px;
+			height: 20px;
+			color: $darkgrey;
+			background: url('../images/caret.png') no-repeat;
+			background-position: 245px 8px;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: #fff;
+			border: none;
+			outline: none;
+		}
+	}
+}
+
+.device_drop_content1 {
+	display: none;
+	position: absolute;
+	top: 105%;
+	left: 0;
+	width: 320px;
+	background: $white;
+    box-shadow: 1px 1px 1px 3px rgba(219, 219, 219, 0.1);
+    z-index: 2;
+
+    a {
+    	display: block;
+    	padding: 10px;
+    	text-align: left;
+    	font-family: "helveturklineregular";
+		color: $darkgrey;
+    	text-decoration: none;
+
+    	&:hover {
+    		font-weight: bold;
+    		background: #e3e2e2;
+    	}
+    }
+}
+
+	.show {
+		display: block;
+	}
+}
+
+.support_buttons {
+	display: block;
+
+	a {
+	display: inline-block;
+	margin-top: 250px;
+	margin-right: 10px;
+	font-family: "turkcell_saturaregular";
+	font-size: 20px;
+	text-decoration: none;
+	}	
+}
+
+.cancel {
+	padding: 14px 22px;
+	color: #fff;
+	background: $darkgrey;
+
+	&:hover {
+		background: #2e2e2e;
+	}
+}
+
+.add {
+	padding: 14px 32px;
+	color: #000;
+	background: $yellow;
+
+	&:hover {
+		background: #ffcc00;
+	}
+}

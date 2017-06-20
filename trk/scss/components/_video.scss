@@ -1,0 +1,65 @@
+.videos {
+	padding-bottom: 60px;
+	background: #eff5f7;
+	text-align: center;
+	color: $darkgrey;
+
+	.container:after {
+		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.section_title {
+		padding-top: 57px;
+		padding-bottom: 59px;
+	}
+
+	.video_listing {
+		padding-bottom: 58px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.vid_thumbnail {
+		float: left;
+		max-width: 256px;
+		padding: 0 10px;
+
+		.vid_description {
+			min-height: 72px;
+			max-width: 231px;
+			margin-top: -2px;
+			background: $white;
+		
+			p {
+				padding: 25px 48px 0;
+				font-family: "helveturklineregular";
+				font-size: 14px;
+			}
+		}
+	}
+
+	.view_videos {
+		text-decoration: none;
+		color: $darkgrey;
+		font-family: "helveturklinebold";
+		font-size: 16px;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	.view_videos:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		padding-right: 10px;
+		padding-bottom: 3px;
+		width: 21px;
+		height: 19px;
+		background: url('../images/bigsprite1.png') no-repeat;
+		background-position: -1331px -18px;
+		}
+	}

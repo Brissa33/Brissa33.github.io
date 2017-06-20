@@ -1,0 +1,129 @@
+.header_vid_wrapper  {
+	position: relative;
+	overflow: hidden;
+
+	video {
+		width: 800px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+		
+		@include breakpoint(desktop) {
+			width: 100%;
+		}
+	}
+
+	.video_overlay {
+		position: absolute;
+		width: 100%;
+		top: 65%;
+		text-align: center;
+		font-family: "volvosanspro_medium";
+		font-size: 12px;
+		letter-spacing: 4px;
+		color: #fff;
+	}
+}
+
+	.playbutton {
+		width: 65px;
+		height: 65px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+
+		@include breakpoint(tablet) {
+			top: 45%;
+		}
+
+		@include breakpoint(phone) {
+			top: 40%;
+		}
+
+		&:before {
+			content: "";
+    		display: block;
+    		width: 0;
+    		height: 0;
+    		border-style: solid;
+    		border-width: 12px 0 12px 18px;
+    		border-color: transparent transparent transparent #ffffff;
+    		position: absolute;
+    		top:0;
+    		left:0;
+    		right:-5px;
+    		bottom:0;
+    		margin: auto;
+			}
+		}
+
+	.pausebutton {
+
+		width: 65px;
+		height: 65px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+		display: none;
+
+		@include breakpoint(tablet) {
+			top: 45%;
+		}
+
+		@include breakpoint(phone) {
+			top: 40%;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 5px;
+			height: 25px;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: -15px;
+			bottom: 0;
+			margin: auto;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 5px;
+			height: 25px;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 15px;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+
+.hide {
+	display: none;
+}
+
+.logo {
+	position: absolute;
+	top: 36px;
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,58 @@
+.hero {
+    background-color: $lighterblue;
+    background: -webkit-radial-gradient(50% bottom, #58c6ed, #235b91, #235b91);
+    background: -o-radial-gradient(50% bottom, #58c6ed, #235b91, #235b91);
+    background: -ms-radial-gradient(50% bottom, #58c6ed, #235b91, #235b91);
+    background: -moz-radial-gradient(50% bottom, #58c6ed, #235b91, #235b91);
+
+        .container {
+            margin: 0 auto;
+            height: 320px;
+            background: url('../images/bigsprite1.png') no-repeat;
+            background-position: 720px -590px;
+            color: $white;
+            font-size: 30px;
+
+        h1 {
+            padding-top: 73px;
+            padding-left: 30px;
+            margin-bottom: 14px;
+            font-family: "turkcell_saturaregular";
+            font-size: 60px;
+
+        }
+
+        form {
+            -webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(rgba(250, 250, 250, 0.2)));
+            -o-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(rgba(250, 250, 250, 0.2)));
+            -ms-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(rgba(250, 250, 250, 0.2)));
+            -moz-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(rgba(250, 250, 250, 0.2)));
+        }
+
+        .text {
+            width: 545px;
+            height: 75px;
+            margin-left: 30px;
+            padding-left: 10px;
+            border: 0;
+            font-family: "turkcell_saturaregular";
+            font-size: 24px;
+            box-shadow: 0 5px 3px -3px #2663a7, 0 5px 3px -3px #2663a7;
+        }
+
+        .search {
+            margin-left: -2px;
+            padding: 24.5px 14px;
+            background: $yellow;
+            border: 0;
+            cursor: pointer;
+            font-family: "turkcell_saturaregular";
+            font-size: 24px;
+            box-shadow: 0 5px 3px -3px #2663a7, 0 5px 3px -3px #2663a7;
+
+            &:hover {
+                background: #ffcc00;
+            }
+        }
+    }
+}

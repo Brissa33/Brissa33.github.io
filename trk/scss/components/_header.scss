@@ -1,0 +1,153 @@
+.header {
+    margin: 0 auto;
+
+	a {
+	display: inline-block;
+    padding: 15px;
+	color: $white;
+	text-decoration: none;
+    font-family: "turkcell_saturaregular";
+
+	&:hover {
+		color: $white;
+	   }
+    }
+
+    .container {
+        position: relative;
+    }
+}
+
+.header_top {
+    background: $darkblue;
+}
+
+.secondaryLinks {
+    position: relative;
+	padding: 13px 15px;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    a {
+        font-family: "helveturklinebold";
+        font-size: 12px;
+    }
+}
+
+.secondaryNav {
+	float: left;
+
+	a {
+		color: #506072;
+	}
+	& a:active {
+		color: #fff;
+	}
+	& a:focus {
+		color: #fff;
+	}
+} 
+
+.logo {
+    position: absolute;
+    display: block;
+    width: 38px;
+    top: 0;
+    left: 50%;
+    margin-left: -19px;
+}
+
+.authentication {
+	float: right;
+
+    & a:hover {
+        color: $yellow;
+    }
+}
+
+.dropdown {
+    background: url('../images/caret.png') no-repeat right center;
+}
+
+.cart {
+    background: url('../images/cart.png') no-repeat right center;
+    background-position: 10px 12px;
+    text-indent: -9999px;
+
+    &:hover {
+        background: url('../images/cart_active.png') no-repeat;
+        background-position: 10px 12px;
+    }
+}
+
+/* NAV LOWER */
+
+.header_bot {
+    background: $lightblue;
+}
+
+.mainLinks {
+    display: block;
+	padding-top: 11px;
+	padding-bottom: 13px;
+	font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    a {
+		padding: 0 19.5px;
+        color: $white;
+        text-decoration: none;
+	}
+
+    & a:hover {
+        color: $yellow;
+    }
+
+	& a:active {
+        color: $yellow;
+    }
+
+    & a:focus {
+        color: $yellow;
+    }
+}
+    
+.searchBox {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+    
+.searchSite {
+    height: 24px;
+    width: 163px;
+    background-color: $darkblue;
+    border: 0;
+}
+
+.searchButton {
+    position: absolute;
+    border: 0;
+    background: url('../images/search.png') no-repeat;
+    right: 5px;
+    top: 6px;
+    cursor: pointer;
+    
+    &:hover {
+        background: url('../images/search_active.png') no-repeat;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+}

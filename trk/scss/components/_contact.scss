@@ -1,0 +1,63 @@
+.contact {
+	background: #00a3d0;
+	background: -webkit-linear-gradient(0deg, #009ac9, #00abd6 80%) no-repeat;;
+
+	.container {
+		width: 100%;
+		max-width: 1024px;
+
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	h2 {
+		white-space: pre;
+		padding-bottom: 14px;
+		font-family: "turkcell_saturabold";
+		font-size: 24px;
+		color: #fff;
+	}
+
+	p {
+		padding-bottom: 34px;
+		font-family: "helveturklinebold";
+		font-size: 12px;
+		color: #ddeff7;
+	}
+
+	.contactColumn {
+		float: left;
+		width: 50%;
+		margin: 60px 0 100px 0;
+		padding: 0 50px 0 20px;
+		border-right: 1px solid #00afd6;
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	.contactColumn:last-child {
+		padding-left: 40px;
+	}
+
+	.btn_contact {
+		padding: 15px 17px;
+		font-family: "turkcell_saturaregular";
+		font-size: 20px;
+		color: #000;
+		background: $yellow;
+		text-decoration: none;
+		border-top: 1px solid #fffd5f;
+		box-shadow: 1px 1px 2px #006480;
+		cursor: pointer;
+
+		&:hover {
+			background: #ffcc00;
+		}
+	}
+}

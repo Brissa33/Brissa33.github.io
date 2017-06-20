@@ -1,0 +1,301 @@
+* {
+	box-sizing: border-box;
+}
+
+.community {
+
+	a {
+		font-size: 12px;
+    	font-weight: bold;
+    	text-decoration: none;
+    	color: $darkgrey;
+
+	&:hover {
+		color: $orange;
+	}
+}
+
+	.container {
+		width: 100%;
+		max-width: 1024px;
+	}
+
+	.section_title {
+		padding-top: 60px;
+		padding-bottom: 25px;
+		text-align: center;
+		color: $darkgrey;
+	}
+
+	h2 {
+		padding-bottom: 10px;
+		font-family: "turkcell_saturabold";
+        font-size: 24px;
+        white-space: pre-line;
+        letter-spacing: -1px;
+		color: $darkgrey;
+	}
+
+    p {
+        font-family: "helveturklineregular";
+        font-size: 14px;
+        color: $lightgrey;
+    }
+
+	.communitySearch {
+		position: absolute;
+		left: 50%;
+        transform: translateX(-50%);
+	}
+
+	.searchComm {
+		width: 393px;
+		height: 57px;
+		font-size: 18px;
+		padding-left: 20px;
+		background: #f6f6f6;
+		border: 2px solid #f5f5f5;
+		box-shadow: inset 3px 3px 3px #d9d9d9, inset -3px 0px 0px #d9d9d9;
+
+        &:focus {
+            outline: 1px solid $orange;
+	   }
+    }
+	
+	.searchCommButton {
+		position: absolute;
+		right: 17px;
+		top: 20px;
+		height: 5px;
+		width: 5px;
+		padding: 15px;
+		background: url('../images/searchicon.png') no-repeat;
+		border: 0;
+		cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+	.communityRow {
+		margin: 0 20px;
+		padding-top: 40px;
+		border-bottom: 1px solid #e5e5e5;
+
+		&:before, 
+    	&:after {
+        	content:"";
+        	display: table ;
+        	clear:both;
+    	}
+	}
+
+	.commFirst {
+		margin-top: 58px;
+	}
+
+    .communityColumn {
+    	float: left;
+    	width: 50%;
+    	padding-right: 55px;
+    	padding-bottom: 40px;
+    	padding-left: 90px;
+    	border-right: 1px solid #e5e5e5;
+
+    	&:last-child {
+    		border-right: 0;
+    	}
+    }
+
+        .bill {
+        
+        &:before {
+        content:"";
+        display: inline-block;
+        position: relative;
+        left: -70px;
+        top: 50px;
+        margin-top: -50px;
+        width: 50px;
+        height: 50px;
+        background: url('../images/bigsprite1.png') no-repeat;
+        background-position: -30px -440px;
+        }
+    }
+
+        .last_bill:before {
+        content:"";
+        display: inline-block;
+        position: relative;
+        left: -70px;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+        background: url('../images/bigsprite1.png') no-repeat;
+        background-position: -140px -440px;
+        }
+    
+
+    .comm_small_links {
+        font-family: "helveturklinebold";
+        font-size: 12px;
+        color: $darkgrey;
+    }
+
+    .user {
+        img {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+	.turcell:before {
+    	content: "";
+    	display: inline-block;;
+    	vertical-align: bottom;
+    	width: 15px;
+    	height: 25px;
+    	padding-right: 15px;
+    	background: url('../images/bigsprite1.png') no-repeat;
+        background-position: -1250px -15px;
+    }
+
+    .tariff {
+
+        &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        left: -70px;
+        top: 50px;
+        margin-top: -50px;
+        width: 50px;
+        height: 50px;
+    	background: url('../images/bigsprite1.png') no-repeat;
+    	background-position: -240px -440px;
+        }
+
+        h2 {
+            padding-bottom: 25px;
+        }   
+	}
+
+    .answers {
+    	padding-right: 30px;
+
+    	&:before {
+    		content: "8";
+    		display: inline-block;
+    		vertical-align: middle;
+    		padding-right: 4px;
+    		font-size: 13px;
+    		color: $orange;
+    	}
+    }
+
+    .follow {
+    	padding-right: 30px;
+
+    	&:before {
+    		content: "";
+    		display: inline-block;
+    		vertical-align: middle;
+    		width: 14px;
+    		height: 10px;
+    		padding-right: 4px;
+    		padding-bottom: 1px;
+    		background: url('../images/bigsprite1.png') no-repeat;
+            background-position: -515px -458px;
+    	}
+    }
+
+    .share:before {
+    	content: "";
+    	display: inline-block;
+    	vertical-align: middle;
+    	width: 13px;
+    	height: 15px;
+    	padding-right: 4px;
+    	background: url('../images/bigsprite1.png') no-repeat;
+        background-position: -568px -458px;
+	}
+
+	.votes {
+		padding-right: 19px;
+
+		&:before {
+			content: "13";
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 4px;
+			font-size: 13px;
+			font-weight: bold;
+			color: $orange;
+		}
+	}
+
+	.like:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 11px;
+		height: 11px;
+		padding-right: 6px;
+		padding-bottom: 2px;
+		background: url('../images/bigsprite1.png') no-repeat;
+        background-position: -632px -460px;
+	}
+
+    span {
+    	color: #4cb2e4;
+    }
+
+    p {
+    	padding-top: 20px;
+    	padding-bottom: 15px;
+    	font-size: 14px;
+    	color: #8c8c8c;
+    }
+
+    .viewSocialMedia {
+        padding-bottom: 40px;
+    	text-align: center;
+        font-family: "helveturklinebold";
+        font-size: 12px;
+
+    	p {
+    		padding-top: 46px;
+    		padding-bottom: 15px;
+    		font-size: 12px;
+    		font-weight: bold;
+    		color: $darkgrey;
+    	}
+
+        .turkcell1 {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            text-indent: -9999px;
+            background: url('../images/bigsprite1.png') no-repeat;
+            background-position: -1240px -137px;
+        }
+
+        .facebook1 {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            text-indent: -9999px;
+            background: url('../images/bigsprite1.png') no-repeat;
+            background-position: -1320px -137px;
+        }
+
+        .twitter1 {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            text-indent: -9999px;
+            background: url('../images/bigsprite1.png') no-repeat;
+            background-position: -1402px -137px;
+        }
+    }
+}

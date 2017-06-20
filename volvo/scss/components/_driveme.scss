@@ -1,0 +1,97 @@
+.drive_me {
+	font-family: "volvosanspro_regular";
+	color: $darkblue;
+
+	img {
+		display: block;
+		width: 100%;
+		margin-bottom: 1px;
+	}
+
+	@include breakpoint(tablet) {
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.img_wrapper {
+			float: left;
+			width: 50%;
+			padding-bottom: 120px;
+		}
+	}
+
+	@include breakpoint(desktop) {
+
+		.img_wrapper {
+			float: left;
+			width: 50%;
+			padding-bottom: 120px;
+		}
+	}
+}
+
+.drive_me_info {
+	padding: 48px 30px 64px 30px;
+
+	@include breakpoint(tablet) {
+		padding: 0 120px;
+	}
+
+	@include breakpoint(desktop) {
+		padding: 0 275px;
+	}
+	
+	h3 {
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+
+	p {
+		padding-top: 30px;
+		font-size: 16px;
+	}
+}
+
+.stay_informed {
+	text-align: center;
+}
+
+.hidden_desktop {
+	@include breakpoint(desktop) {
+		display: none;
+	}
+}
+
+.join {
+	padding: 0 40px 40px 40px;
+	text-align: left;
+
+	@include breakpoint(tablet) {
+		padding: 40px 260px;
+		text-align: center;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 20px 55px;
+	font-family: "volvosanspro_medium";
+	font-size: 12px;
+	letter-spacing: 4px;
+	background: #003057;
+	color: #fff;
+	text-decoration: none;
+
+	&:hover {
+		background: #024b86;
+	}
+}
+
+.linebreak_phone {
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}

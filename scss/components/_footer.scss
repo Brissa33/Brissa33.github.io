@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+}
+
+.decorationBottom {
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  height: 100px;
+  width: 1px;
+  background: $darkblue;
+}
+
+.aboutMe, .contactMe, .footer a {
+  font-family: 'gothamprobold';
+  color: $darkblue;
+}
+
+.contactMe {
+  margin-top: 30px;
+}

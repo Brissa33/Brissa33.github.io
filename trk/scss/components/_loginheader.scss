@@ -1,0 +1,196 @@
+.login_header {
+	background: $darkblue;
+	background: linear-gradient(0deg, #153758, #0f2842 80%) no-repeat;
+	color: $white;
+}
+
+.login_header_top {
+	padding: 20px 0;
+	font-family: "helveturklinebold";
+	font-size: 10px;
+	}
+
+	img {
+		padding-right: 14px;
+	}
+
+	nav {
+		display: inline-block;
+
+		a {
+			color: #506174;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		span {
+			color: $white;
+		}
+
+		.username {
+			padding: 2px 0;
+			font-family: "turkcell_saturabold";
+			font-size: 30px;
+		}
+
+		.individual {
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin-left: 4px;
+				background: url('../images/caret.png') no-repeat;
+				background-position: 0 3px;
+			}
+		}
+
+		.phone_number {
+			padding-right: 8px;
+			border-right: 1px dashed #32475d;
+
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin-left: 10px;
+				background: url('../images/caret.png') no-repeat;
+				background-position: 0 4px;
+			}
+		}
+
+		.sign_in_out {
+			padding-left: 8px;
+		}
+	}
+
+	.package {
+		float: right;
+		margin-top: -60px;
+		padding-right: 20px;
+		border-right: 1px dashed #32475d;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 55px;
+			height: 55px;
+			position: relative;
+			top: 58px;
+			right: 60px;
+			margin-right: 8px;
+			background: url('../images/infosprite.png') no-repeat;
+			background-position: -628px -148px;
+		}
+
+		p {
+			padding: 1px 0;
+		}
+
+		a {
+			color: #76b72d;
+			text-decoration: none;
+
+			&:after {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			position: relative;
+			left: 0px;
+			bottom: -5px;
+			margin-left: 20px;
+			background: url('../images/infosprite.png') no-repeat;
+			background-position: -900px -175px;
+			}
+
+			&:hover {
+				color: $yellow;
+			}
+
+		}
+
+		span {
+			font-size: 30px;
+		}
+	}
+
+	.bill_info {
+		float: right;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 80px;
+
+		span {
+			font-size: 30px;
+		}
+
+		a {
+			position: absolute;
+			right: 0;
+			top: 4px;
+			padding: 12px 16px;
+			background: $yellow;
+			color: #000;
+			text-decoration: none;
+			font-family: "turkcell_saturaregular";
+			font-size: 20px;
+			box-shadow: 1px 1px 1px 1px #0c1f34;
+
+			&:hover {
+				background: #f3d433;
+			}
+		}
+	}
+
+.login_header_bot {
+	background: #1f507f;
+	font-family: "turkcell_saturabold";
+
+	.container {
+		position: relative;
+	}
+}
+
+.login_logo {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.cart_search {
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	transform: translateY(50%);
+}
+
+.shopping_cart {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-right: 20px;
+	background: url('../images/cart.png') no-repeat;
+	text-indent: -9999px;
+
+	&:hover {
+		background: url('../images/cart_active.png') no-repeat;
+	}
+}
+
+.looking_glass {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url('../images/search.png') no-repeat;
+	text-indent: -9999px;
+
+	&:hover {
+		background: url('../images/search_active.png') no-repeat;
+	}
+}

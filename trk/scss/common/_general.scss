@@ -1,0 +1,23 @@
+$yellow: #ffe000;
+$white: #fff;
+$darkblue: #122e4b;
+$lightblue: #1c4a74;
+$lighterblue: #1c4b7e;
+$orange: #f38235;
+$darkgrey: #4d4d4d;
+$lightgrey: #9d9d9d;
+
+a, .search {
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.section-title {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+}

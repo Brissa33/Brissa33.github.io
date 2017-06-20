@@ -1,0 +1,80 @@
+.cs_chat {
+	background: #f38034;
+	background: -webkit-linear-gradient(0deg, #f38034, #f9bf4e 80%) no-repeat;
+	background: -o-linear-gradient(0deg, #f38034, #f9bf4e 80%) no-repeat;
+	background: -moz-linear-gradient(0deg, #f38034, #f9bf4e 80%) no-repeat;
+	background: linear-gradient(0deg, #f38034, #f9bf4e 80%) no-repeat;
+
+	.container {
+		padding-top: 57px;
+		padding-bottom: 120px;
+		background: url('../images/girl.png') no-repeat;
+		background-size: 25%;
+		background-position: -5px 50px;
+	}
+
+	.section_title {
+		font-family: "turkcell_saturabold";
+		font-size: 34px;
+		padding-bottom: 59px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.chatBubble {
+		width: 510px;
+		height: 188px;	
+		position: relative;
+		margin: 0 auto;
+		padding-top: 28px;
+		background: #fff;
+		box-shadow: 0 7px 3px -3px #f38633, 0 7px 3px -3px #7f7f7f;
+		-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.2)));
+	
+		&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 100%;
+		width: 0;
+		height: 0;
+		border-top: 28px solid #fff;
+		border-left: 35px solid transparent;
+		}
+
+	span {
+		text-align: center;
+		font-family: "turkcell_saturabold";
+		font-size: 28px;
+		color: $darkgrey;
+	}
+
+	p {
+		text-align: center;
+		letter-spacing: -1px;
+		font-family: "turkcell_saturaregular";
+		font-size: 22px;
+		color: $darkgrey;
+	}
+}
+
+	.btn_signIn {
+		display: block;
+		width: 95px;
+		height: 44px;
+		margin: 24px auto 27px auto;
+		padding: 14px 16px;
+		text-align: center;
+		text-decoration: none;
+		font-family: "turkcell_saturaregular";
+		font-size: 20px;
+		color: #000;
+		background: $yellow;
+		cursor: pointer;
+		box-shadow: 1px 2px 1px #a4a193, -1px 0px 1px #a4a193;
+
+		&:hover {
+			background: #ffcc00;
+		}
+	}
+}
