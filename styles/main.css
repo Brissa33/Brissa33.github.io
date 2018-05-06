@@ -197,8 +197,7 @@ body {
   position: relative;
   margin-top: 135px;
   max-width: 330px;
-  max-height: 330px;
-  background: #000; }
+  max-height: 330px; }
   .portfolioSubcontainer:hover {
     transition: all 0.3s ease-in; }
     .portfolioSubcontainer:hover .projectDescription {

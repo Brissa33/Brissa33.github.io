@@ -58,7 +58,8 @@
   margin-top: 135px;
   max-width: 330px;
   max-height: 330px;
-  background: #000;
+  //background: #000;
+  //background: rgba(0, 0, 0, .5);
   &:hover {
     transition: all 0.3s ease-in;
     .projectDescription {
