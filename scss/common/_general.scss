@@ -34,7 +34,13 @@ body {
   }
 
   @else if $point == desktop {
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @else if $point == large {
+    @media (min-width: 1200px) {
       @content;
     }
   }
